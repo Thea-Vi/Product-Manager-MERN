@@ -30,6 +30,7 @@ const ProductForm = () => {
 
     return (
         <div>
+            <h1>Product Manager</h1>
             <form onSubmit={submitProductHandler} className='form-group'>
                 <p>
                     <label>Title</label>
