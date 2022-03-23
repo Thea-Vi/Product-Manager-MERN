@@ -21,7 +21,7 @@ function App() {
           {/* show components on local:3000 */}
           {/* SHOW ALL ROUTE*/}
           <Route exact path="/">
-            <ProductForm />
+            <ProductForm productAdded={productAdded} setProductAdded={setProductAdded} />
             <hr />
             <DisplayProducts />
           </Route>

@@ -3,7 +3,7 @@ import axios from 'axios'
 import { Link } from "react-router-dom";
 import { useHistory } from 'react-router-dom'
 
-const DisplayProducts = () => {
+const DisplayProducts = (props) => {
 
     const [allProducts, setAllProducts] = useState([])
     let [deleted, setDeleted] = useState(false)
