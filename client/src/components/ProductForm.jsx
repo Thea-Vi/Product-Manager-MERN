@@ -9,6 +9,7 @@ const ProductForm = () => {
     const [title, setTitle] = useState("")
     const [price, setPrice] = useState(0)
     const [description, setDescription] = useState("")
+    const [isRecommended, setIsRecommended] = useState(false)
 
     const submitProductHandler = (e) => {
         e.preventDefault();
@@ -17,7 +18,7 @@ const ProductForm = () => {
         - check the state in components if they react on ===> onChange
       */
         //  inputs from the form - object
-        const productData = { title, price, description }
+        const productData = { title, price, description, isRecommended }
         // console.log(productData)
 
         // remember http://  productdata --> inputs from form
@@ -44,6 +45,11 @@ const ProductForm = () => {
                     <label>Description</label>
                     <input onChange={e => setDescription(e.target.value)} type="text" name="" id="" />
                 </p>
+                <p>
+                    <label>Is Recommended</label>
+                    <input onChange={e => setIsRecommended(e.target.checked)} type="checkbox" name="" id="" />
+                </p>
+
                 <button className="btn btn-primary">Create</button>
 
             </form>
