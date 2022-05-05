@@ -25,15 +25,9 @@ const DisplayProducts = (props) => {
                 console.log("delete product", res)
                 setDeleted(!deleted)
 
-
-
             })
             .catch(err => console.log("error", err))
-
-
-
     }
-
 
     return (
         <div>
@@ -49,8 +43,6 @@ const DisplayProducts = (props) => {
                         <Link to={`/products/edit/${product._id}`} className='btn btn-warning'>Edit</Link> &nbsp;
                         <button onClick={() => deleteProduct(product._id)} className="btn btn-danger">Delete</button>
                         <p>Created on: {product.createdAt}</p>
-
-
                     </div>
                 )
 
